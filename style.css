@@ -1,0 +1,89 @@
+
+/* Navbar customization */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.heading {
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Post buttons section */
+button {
+    font-size: 16px;
+    display: inline-block; /* Makes the button appear in a single line */
+    padding: 10px 20px; /* Adjust padding to make the button larger */
+    text-align: center; /* Center text inside the button */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px auto; /* Center button horizontally */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: white; /* White text on hover */
+}
+
+
+
+/* Container for posts */
+/* Container for posts */
+#postsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center */
+    align-items: center; /* Horizontally center */
+    text-align: center; /* Center text */
+    min-height: 200px; /* Minimum height for consistency */
+    height: auto; /* Let it expand if content is too much */
+    max-height: 300px; /* Optional: if you want to limit the height */
+}
+
+.post h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.post p {
+    font-size: 16px;
+    color: #333;
+}
+
+.post small {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: center;
+    }
+
+    #postsContainer {
+        gap: 10px;
+    }
+
+    .post {
+        padding: 15px;
+    }
+}
+
